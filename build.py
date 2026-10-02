@@ -155,11 +155,11 @@ def portada():
     filtros += "".join(f'<button type="button" aria-pressed="false" data-filtro="{escape(t)}">{escape(t)}<span>{n}</span></button>'
                        for t, n in conteo.items())
     vendidos = "".join(f"""      <div class="ficha vendido" data-tipo="vendido">
-        <div class="ficha-foto"><img src="img/{v["foto"]}" alt="{escape(v["titulo"])}, vendido" loading="lazy" width="640" height="853"><span class="sello">Vendido · {escape(v["cuando"].lower())}</span></div>
+        <div class="ficha-foto"><img src="img/{v["foto"]}" alt="{escape(v["titulo"])}, vendido" loading="lazy" width="640" height="853"><span class="sello">Vendido{(" · " + escape(v["cuando"].lower())) if v.get("cuando") else ""}</span></div>
         <div class="ficha-cuerpo">
-          <span class="rotulo">Minicargador</span>
-          <h3>{escape(v["titulo"].replace("Minicargador ", ""))}</h3>
-          <ul class="datos"><li>Nuestra primera venta</li></ul>
+          <span class="rotulo">{escape(v.get("tipo", "Minicargador"))}</span>
+          <h3>{escape(v["titulo"].replace(v.get("tipo", "Minicargador") + " ", ""))}</h3>
+          <ul class="datos"><li>{escape(v.get("nota", "Vendido por +MÁQUINAS"))}</li></ul>
           <div class="ficha-precio"><span class="consultar">Vendido</span></div>
         </div>
       </div>

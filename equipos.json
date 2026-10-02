@@ -126,12 +126,16 @@
     {
       "titulo": "Minicargador Bobcat",
       "cuando": "Agosto 2026",
-      "foto": "bobcat-minicargador-vendido.webp"
+      "foto": "bobcat-minicargador-vendido.webp",
+      "tipo": "Minicargador",
+      "nota": "Nuestra primera venta"
     },
     {
       "titulo": "Retroexcavadora Caterpillar 416 2024",
-      "cuando": "Octubre 2026",
-      "foto": "caterpillar-416-2024-2.webp"
+      "cuando": "",
+      "foto": "caterpillar-416-2024-2.webp",
+      "tipo": "Retroexcavadora",
+      "nota": "Vendida por +MÁQUINAS"
     }
   ]
 }
