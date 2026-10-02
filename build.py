@@ -94,6 +94,7 @@ def cabecera(p):
     <nav class="menu" aria-label="Principal">
       <a href="{p}index.html#equipos">Equipos</a>
       <a href="{p}index.html#vender">Vender mi máquina</a>
+      <a href="{p}recomienda/">Gana por recomendar</a>
       <a href="{p}index.html#nosotros">Nosotros</a>
       <a href="{p}index.html#contacto">Contacto</a>
     </nav>
@@ -123,6 +124,7 @@ def pie(p):
       <ul>
         <li><a href="{p}index.html#equipos">Disponibles</a></li>
         <li><a href="{p}index.html#vender">Vender mi máquina</a></li>
+        <li><a href="{p}recomienda/">Gana por recomendar</a></li>
       </ul>
     </div>
     <p class="legal"><span>© 2026 +MÁQUINAS</span><span>Stock actualizado al {D["actualizado"]}</span></p>
@@ -367,6 +369,79 @@ fotos.slice(1).forEach(s => {{ const im = new Image(); im.src = s; }});
     return html
 
 
+PORCENTAJE = D.get("referidos_porcentaje", 20)
+
+
+def pagina_recomienda():
+    p = "../"
+    html = cabeza("Gana por recomendar · +MÁQUINAS",
+                  f"Recomiéndanos a quien quiera vender o comprar maquinaria pesada y gana el {PORCENTAJE}% de nuestra comisión cuando se concrete.",
+                  p, "/recomienda/")
+    html += "<body>\n" + cabecera(p) + f"""
+<main>
+<section class="seccion oscuro vender" id="recomendar">
+  <div class="envase">
+    <div>
+      <span class="rotulo">Programa de referidos</span>
+      <h2>Gana por recomendar.</h2>
+      <p class="intro">¿Conoces a alguien que quiera vender o comprar una máquina o un camión? Recomiéndanos. Si la venta se concreta, te pagamos el <b>{PORCENTAJE}% de nuestra comisión</b>.</p>
+      <ol class="pasos">
+        <li><span class="n">01</span><div><b>Nos cuentas</b><p>Completas el formulario con el dato: quién vende o quién busca, y qué equipo.</p></div></li>
+        <li><span class="n">02</span><div><b>Nosotros hacemos el trabajo</b><p>Contactamos, revisamos el equipo, publicamos y negociamos. Tú no tienes que hacer nada más.</p></div></li>
+        <li><span class="n">03</span><div><b>Cobras al cerrar</b><p>Cuando se concreta la venta te transferimos tu parte. Te avisamos por WhatsApp en cada paso.</p></div></li>
+      </ol>
+      <p class="intro" style="font-size:14px">Ideal para mecánicos, operadores, choferes, talleres y gente del rubro. Vale para la primera persona que nos pase el contacto.</p>
+    </div>
+    <form class="formulario" name="referidos" method="POST" action="/recomienda/gracias/" data-netlify="true" netlify-honeypot="sitio-web">
+      <input type="hidden" name="form-name" value="referidos">
+      <p hidden><label>No completar: <input name="sitio-web"></label></p>
+      <h3>Pásanos el dato</h3>
+      <p>Tus datos y los de tu contacto son privados: solo los usamos para coordinar esta venta.</p>
+      <div class="campos">
+        <div class="campo"><label for="r-nombre">Tu nombre</label><input id="r-nombre" name="tu_nombre" autocomplete="name" required></div>
+        <div class="campo"><label for="r-wa">Tu WhatsApp</label><input id="r-wa" name="tu_whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="+56 9 …" required></div>
+        <div class="campo"><label for="r-tipo">Tu contacto quiere…</label><select id="r-tipo" name="quiere"><option>Vender una máquina o camión</option><option>Comprar una máquina o camión</option><option>Arrendar maquinaria</option></select></div>
+        <div class="campo"><label for="r-equipo">Qué equipo</label><input id="r-equipo" name="equipo" placeholder="Ej: excavadora CAT 320, 2016"></div>
+        <div class="campo"><label for="r-contacto">Nombre o empresa del contacto</label><input id="r-contacto" name="contacto"></div>
+        <div class="campo"><label for="r-lugar">Dónde está</label><input id="r-lugar" name="lugar" placeholder="Ciudad o región"></div>
+        <div class="campo ancho"><label for="r-nota">Algo más</label><textarea id="r-nota" name="nota" placeholder="Cómo lo conoces, cuándo quiere vender o comprar, precio que espera…"></textarea></div>
+        <div class="campo ancho"><label style="text-transform:none;letter-spacing:0;font:400 14px/1.4 var(--texto)"><input type="checkbox" name="acepta" value="si" required style="width:auto;margin-right:8px;appearance:auto">Mi contacto sabe que lo voy a recomendar, y acepto que +MÁQUINAS me escriba por WhatsApp.</label></div>
+      </div>
+      <button class="boton boton-amarillo" type="submit">Enviar recomendación</button>
+      <p class="nota">Te contactamos dentro de 48 horas hábiles.</p>
+    </form>
+  </div>
+</section>
+</main>
+""" + pie(p) + """</body>
+</html>
+"""
+    return html
+
+
+def pagina_gracias():
+    p = "../../"
+    html = cabeza("¡Gracias por recomendar! · +MÁQUINAS", "Recibimos tu recomendación.", p, "/recomienda/gracias/",
+                  '<meta name="robots" content="noindex">\n')
+    html += "<body>\n" + cabecera(p) + f"""
+<main>
+<section class="seccion oscuro vender">
+  <div class="envase">
+    <div>
+      <span class="rotulo">Recomendación recibida</span>
+      <h2>¡Gracias!</h2>
+      <p class="intro">Ya tenemos tu dato. Te escribimos por WhatsApp dentro de 48 horas hábiles para contarte cómo sigue. Si la venta se concreta, te pagamos el {PORCENTAJE}% de nuestra comisión.</p>
+      <p style="margin-top:28px"><a class="boton boton-amarillo" href="{p}index.html#equipos">Ver equipos disponibles</a></p>
+    </div>
+  </div>
+</section>
+</main>
+""" + pie(p) + """</body>
+</html>
+"""
+    return html
+
+
 def main():
     open(os.path.join(SITIO, "index.html"), "w", encoding="utf-8").write(portada())
     urls = ["/"]
@@ -375,6 +450,10 @@ def main():
         os.makedirs(d, exist_ok=True)
         open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(pagina_equipo(e))
         urls.append(f'/equipos/{e["slug"]}/')
+    for ruta, fn in (("recomienda", pagina_recomienda), (os.path.join("recomienda", "gracias"), pagina_gracias)):
+        os.makedirs(os.path.join(SITIO, ruta), exist_ok=True)
+        open(os.path.join(SITIO, ruta, "index.html"), "w", encoding="utf-8").write(fn())
+    urls.append("/recomienda/")
     open(os.path.join(SITIO, "sitemap.xml"), "w").write(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"  <url><loc>{DOMINIO}{u}</loc></url>\n" for u in urls) + "</urlset>\n")
