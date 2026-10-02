@@ -148,8 +148,8 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
 .miga a:hover { color: var(--tinta); }
 .miga span { margin: 0 10px; color: var(--gris-claro); }
 .detalle { display: grid; grid-template-columns: 7fr 5fr; gap: 56px; padding-bottom: 96px; }
-.galeria-principal { position: relative; aspect-ratio: 4 / 5; background: #ddd; overflow: hidden; }
-.galeria-principal img { width: 100%; height: 100%; object-fit: cover; }
+.galeria-principal { position: relative; aspect-ratio: 4 / 5; background: #0f0f0e; overflow: hidden; }
+.galeria-principal img { width: 100%; height: 100%; object-fit: contain; }
 .galeria-principal .contador { position: absolute; right: 14px; bottom: 14px; background: rgba(15,15,14,.8); color: var(--blanco); font: 600 13px/1 var(--cond); letter-spacing: .1em; padding: 8px 10px; }
 .galeria-flecha { position: absolute; top: 50%; transform: translateY(-50%); width: 48px; height: 48px; display: grid; place-items: center; background: rgba(15,15,14,.72); color: var(--blanco); font: 400 22px/1 var(--texto); }
 .galeria-flecha:hover { background: var(--amarillo); color: var(--negro); }
