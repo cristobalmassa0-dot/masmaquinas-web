@@ -10,6 +10,7 @@ import os
 from html import escape
 from urllib.parse import quote
 
+ACTUAL = ' aria-current="true"'
 RAIZ = os.path.dirname(os.path.abspath(__file__))
 SITIO = os.path.join(RAIZ, "sitio")
 DOMINIO = "https://mas-maquinas.cl"
@@ -292,7 +293,7 @@ def pagina_equipo(e):
     n = nombre_completo(e)
     fotos = e["fotos"]
     minis = "".join(
-        f'<button type="button" data-i="{i}" aria-label="Foto {i + 1}"{" aria-current=\"true\"" if i == 0 else ""}>'
+        f'<button type="button" data-i="{i}" aria-label="Foto {i + 1}"{ACTUAL if i == 0 else ""}>'
         f'<img src="{p}{foto(e, f, True)}" alt="" loading="lazy" width="160" height="213"></button>'
         for i, f in enumerate(fotos))
     grandes = json.dumps([p + foto(e, f) for f in fotos])

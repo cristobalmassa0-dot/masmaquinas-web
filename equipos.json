@@ -1,32 +1,8 @@
 {
   "whatsapp": "56994268060",
   "instagram": "masmaquinas.cl",
-  "actualizado": "30 de septiembre de 2026",
+  "actualizado": "2 de octubre de 2026",
   "equipos": [
-    {
-      "slug": "caterpillar-416-2024",
-      "tipo": "Retroexcavadora",
-      "marca": "Caterpillar",
-      "modelo": "416",
-      "anio": 2024,
-      "uso": "1.833 h",
-      "precio": "$70.000.000",
-      "precio_nota": "+ IVA",
-      "fotos": [2, 3, 4, 5, 6, 7],
-      "resumen": "Poco uso, garantía de fábrica vigente y mantenciones en Finning.",
-      "specs": [
-        ["Año", "2024"],
-        ["Horas de uso", "1.833"],
-        ["Motor", "Cat C3.6 turbo diésel"],
-        ["Potencia", "75 HP"],
-        ["Tracción", "4x4"],
-        ["Cabina", "Cerrada, con aire acondicionado"],
-        ["Garantía", "De fábrica, vigente"],
-        ["Mantenciones", "Realizadas por Finning"],
-        ["Revisión técnica", "Vigente hasta enero de 2028"]
-      ],
-      "texto": "Retroexcavadora Caterpillar 416 del año 2024 con 1.833 horas. Motor Cat C3.6 turbo diésel de 75 HP, tracción 4x4 y cabina cerrada con aire acondicionado. Tiene la garantía de fábrica vigente, todas sus mantenciones hechas en Finning y la revisión técnica al día hasta enero de 2028."
-    },
     {
       "slug": "caterpillar-420",
       "tipo": "Retroexcavadora",
@@ -35,12 +11,28 @@
       "anio": null,
       "uso": "1.285 h",
       "precio": null,
-      "fotos": [3, 2, 4, 5, 6, 7],
+      "fotos": [
+        3,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
       "resumen": "Transmisión automática y pocas horas de trabajo.",
       "specs": [
-        ["Horas de uso", "1.285"],
-        ["Combustible", "Diésel"],
-        ["Transmisión", "Automática"]
+        [
+          "Horas de uso",
+          "1.285"
+        ],
+        [
+          "Combustible",
+          "Diésel"
+        ],
+        [
+          "Transmisión",
+          "Automática"
+        ]
       ],
       "texto": "Retroexcavadora Caterpillar 420 con 1.285 horas de uso, motor diésel y transmisión automática. Lista para seguir trabajando en obra, faena o proyecto agrícola."
     },
@@ -52,15 +44,36 @@
       "anio": 2020,
       "uso": "9.834 h",
       "precio": null,
-      "fotos": [3, 4, 5, 2, 6],
+      "fotos": [
+        3,
+        4,
+        5,
+        2,
+        6
+      ],
       "ubicacion": "Puerto Varas",
       "resumen": "Excavadora de 18 toneladas, en Puerto Varas.",
       "specs": [
-        ["Año", "2020"],
-        ["Horas de uso", "9.834"],
-        ["Peso operativo", "18 toneladas"],
-        ["Combustible", "Diésel"],
-        ["Ubicación", "Puerto Varas"]
+        [
+          "Año",
+          "2020"
+        ],
+        [
+          "Horas de uso",
+          "9.834"
+        ],
+        [
+          "Peso operativo",
+          "18 toneladas"
+        ],
+        [
+          "Combustible",
+          "Diésel"
+        ],
+        [
+          "Ubicación",
+          "Puerto Varas"
+        ]
       ],
       "texto": "Excavadora Hyundai Robex 180LC-9S del año 2020, con 9.834 horas y 18 toneladas de peso operativo. Sirve para movimiento de tierra, excavaciones, obras civiles y faenas de alto rendimiento. Está en Puerto Varas y se puede coordinar visita."
     },
@@ -72,16 +85,39 @@
       "anio": 2011,
       "uso": "380.000 km",
       "precio": null,
-      "fotos": [3, 4, 5, 6],
+      "fotos": [
+        3,
+        4,
+        5,
+        6
+      ],
       "ubicacion": "Puerto Varas",
       "resumen": "Tolva para áridos y materiales, en Puerto Varas.",
       "specs": [
-        ["Año", "2011"],
-        ["Kilometraje", "380.000 km"],
-        ["Motor", "Diésel, 7.200 cc"],
-        ["Potencia", "220 HP"],
-        ["Transmisión", "Manual"],
-        ["Ubicación", "Puerto Varas"]
+        [
+          "Año",
+          "2011"
+        ],
+        [
+          "Kilometraje",
+          "380.000 km"
+        ],
+        [
+          "Motor",
+          "Diésel, 7.200 cc"
+        ],
+        [
+          "Potencia",
+          "220 HP"
+        ],
+        [
+          "Transmisión",
+          "Manual"
+        ],
+        [
+          "Ubicación",
+          "Puerto Varas"
+        ]
       ],
       "texto": "Camión tolva Ford Cargo 1722 del año 2011, con 380.000 km, motor diésel de 7.200 cc y 220 HP, transmisión manual. Pensado para construcción, áridos y transporte de materiales. Está en Puerto Varas."
     }
@@ -91,6 +127,11 @@
       "titulo": "Minicargador Bobcat",
       "cuando": "Agosto 2026",
       "foto": "bobcat-minicargador-vendido.webp"
+    },
+    {
+      "titulo": "Retroexcavadora Caterpillar 416 2024",
+      "cuando": "Octubre 2026",
+      "foto": "caterpillar-416-2024-2.webp"
     }
   ]
 }
