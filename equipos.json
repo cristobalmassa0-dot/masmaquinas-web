@@ -120,6 +120,56 @@
         ]
       ],
       "texto": "Camión tolva Ford Cargo 1722 del año 2011, con 380.000 km, motor diésel de 7.200 cc y 220 HP, transmisión manual. Pensado para construcción, áridos y transporte de materiales. Está en Puerto Varas."
+    },
+    {
+      "slug": "scania-g400-2016",
+      "tipo": "Camión tolva",
+      "marca": "Scania",
+      "modelo": "G400 6x4",
+      "anio": 2016,
+      "uso": "548.462 km",
+      "precio": "$73.000.000",
+      "precio_nota": "IVA incluido, con batea",
+      "fotos": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "ubicacion": "Santiago",
+      "resumen": "Camión tractor con batea 22 m³, en Santiago.",
+      "specs": [
+        [
+          "Año",
+          "2016"
+        ],
+        [
+          "Kilometraje",
+          "548.462 km"
+        ],
+        [
+          "Configuración",
+          "6x4"
+        ],
+        [
+          "Batea",
+          "22 m³"
+        ],
+        [
+          "Combustible",
+          "Diésel"
+        ],
+        [
+          "Ubicación",
+          "Santiago"
+        ],
+        [
+          "Precio sin batea",
+          "$58.000.000 IVA incluido"
+        ]
+      ],
+      "texto": "Camión tractor Scania G400 6x4 del año 2016, con 548.462 km, equipado con batea de 22 m³ para transporte de áridos, movimiento de material y faena. Motor diésel. Está en Santiago y también se vende sin la batea."
     }
   ],
   "vendidos": [
