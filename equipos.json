@@ -170,6 +170,71 @@
         ]
       ],
       "texto": "Camión tractor Scania G400 6x4 del año 2016, con 548.462 km, equipado con batea de 22 m³ para transporte de áridos, movimiento de material y faena. Motor diésel. Está en Santiago y también se vende sin la batea."
+    },
+    {
+      "slug": "cummins-yns350c-2019",
+      "tipo": "Generador",
+      "marca": "Cummins",
+      "modelo": "YNS350C",
+      "anio": 2019,
+      "uso": "Standby 275 kW / 343,75 kVA",
+      "precio": "$25.000.000",
+      "fotos": [
+        2
+      ],
+      "ubicacion": "Santiago",
+      "resumen": "Grupo electrógeno diésel 250 kW / 312,5 kVA, en Santiago.",
+      "specs": [
+        [
+          "Año",
+          "2019"
+        ],
+        [
+          "Potencia nominal",
+          "250 kW / 312,5 kVA"
+        ],
+        [
+          "Potencia standby",
+          "275 kW / 343,75 kVA"
+        ],
+        [
+          "Voltaje",
+          "400/230 V"
+        ],
+        [
+          "Corriente nominal",
+          "451 A"
+        ],
+        [
+          "Frecuencia",
+          "50 Hz"
+        ],
+        [
+          "Fases",
+          "3"
+        ],
+        [
+          "Velocidad",
+          "1.500 rpm"
+        ],
+        [
+          "Factor de potencia",
+          "0,8"
+        ],
+        [
+          "Peso neto",
+          "4.330 kg"
+        ],
+        [
+          "Norma",
+          "ISO 8528 / ISO 9001"
+        ],
+        [
+          "Ubicación",
+          "Santiago"
+        ]
+      ],
+      "texto": "Grupo generador diésel Cummins YNS350C del año 2019, con potencia nominal de 250 kW / 312,5 kVA y standby de 275 kW / 343,75 kVA. Voltaje 400/230 V, 3 fases, 1.500 rpm y factor de potencia 0,8. Pensado para respaldo de energía en faenas, obras, minería, agricultura e instalaciones industriales. Está en Santiago."
     }
   ],
   "vendidos": [

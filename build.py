@@ -27,7 +27,7 @@ ICONO_WA = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-w
             'fill="currentColor" stroke-width="1"/></svg>')
 
 TIPOS_PLURAL = {"Retroexcavadora": "Retroexcavadoras", "Excavadora": "Excavadoras",
-                "Camión tolva": "Camiones"}
+                "Camión tolva": "Camiones", "Generador": "Generadores"}
 
 
 def wa(msg):
