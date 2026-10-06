@@ -239,6 +239,49 @@
       ],
       "texto": "Grupo generador diésel Lureye YNS350C del año 2019, con 2.895 horas de uso, potencia nominal de 250 kW / 312,5 kVA y standby de 275 kW / 343,75 kVA. Voltaje 400/230 V, 3 fases, 1.500 rpm y factor de potencia 0,8. Pensado para respaldo de energía en faenas, obras, minería, agricultura e instalaciones industriales. Está operativo en Santiago.",
       "precio_nota": "+ IVA"
+    },
+    {
+      "slug": "mercedes-benz-actros-2645-2019",
+      "tipo": "Camión tolva",
+      "marca": "Mercedes-Benz",
+      "modelo": "New Actros 2645 6x4",
+      "anio": 2019,
+      "uso": "479.888 km",
+      "precio": "$48.000.000",
+      "precio_nota": "+ IVA",
+      "fotos": [
+        2,
+        3,
+        4
+      ],
+      "resumen": "Camión tractor 6x4 del 2019, 479.888 km.",
+      "specs": [
+        [
+          "Año",
+          "2019"
+        ],
+        [
+          "Kilometraje",
+          "479.888 km"
+        ],
+        [
+          "Horas de uso",
+          "14.146"
+        ],
+        [
+          "Configuración",
+          "6x4"
+        ],
+        [
+          "Color",
+          "Blanco"
+        ],
+        [
+          "Combustible",
+          "Diésel"
+        ]
+      ],
+      "texto": "Camión tractor Mercedes-Benz New Actros 2645 6x4 del año 2019, color blanco, con 479.888 km y 14.146 horas. Diésel, pensado para transporte de áridos, movimiento de material y faena. Precio por tracto, sin batea; hay semirremolques disponibles por separado."
     }
   ],
   "vendidos": [
