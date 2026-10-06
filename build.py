@@ -64,7 +64,7 @@ def foto(e, n, chica=False):
     return f'img/{e["slug"]}-{n}{"-s" if chica else ""}.webp'
 
 
-def cabeza(titulo, descripcion, p, canonica, extra=""):
+def cabeza(titulo, descripcion, p, canonica, extra="", imagen="/og/home.jpg"):
     return f"""<!doctype html>
 <html lang="es-CL">
 <head>
@@ -77,6 +77,15 @@ def cabeza(titulo, descripcion, p, canonica, extra=""):
 <meta property="og:title" content="{escape(titulo)}">
 <meta property="og:description" content="{escape(descripcion)}">
 <meta property="og:locale" content="es_CL">
+<meta property="og:site_name" content="+MÁQUINAS">
+<meta property="og:url" content="{DOMINIO}{canonica}">
+<meta property="og:image" content="{DOMINIO}{imagen}">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{escape(titulo)}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{DOMINIO}{imagen}">
 <meta name="theme-color" content="#0f0f0e">
 <link rel="icon" href="{p}assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -315,7 +324,8 @@ def pagina_equipo(e):
     html = cabeza(f'{e["tipo"]} {n} en venta · +MÁQUINAS',
                   f'{e["tipo"]} {n}, {e["uso"]}. {e["resumen"]} Fotos reales y ficha técnica.',
                   p, f'/equipos/{e["slug"]}/',
-                  f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n')
+                  f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n',
+                  imagen=f'/og/{e["slug"]}.jpg')
     html += '<body class="pagina-equipo">\n' + cabecera(p) + f"""
 <main class="envase">
   <nav class="miga" aria-label="Ruta"><a href="{p}index.html">Inicio</a><span>/</span><a href="{p}index.html#equipos">{escape(tipo_pl)}</a><span>/</span>{escape(nombre(e))}</nav>
