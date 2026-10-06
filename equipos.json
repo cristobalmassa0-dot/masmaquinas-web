@@ -1,7 +1,7 @@
 {
   "whatsapp": "56994268060",
   "instagram": "masmaquinas.cl",
-  "actualizado": "2 de octubre de 2026",
+  "actualizado": "6 de octubre de 2026",
   "equipos": [
     {
       "slug": "caterpillar-420",
@@ -172,13 +172,13 @@
       "texto": "Camión tractor Scania G400 6x4 del año 2016, con 548.462 km, equipado con batea de 22 m³ para transporte de áridos, movimiento de material y faena. Motor diésel. Está en Santiago y también se vende sin la batea."
     },
     {
-      "slug": "cummins-yns350c-2019",
+      "slug": "lureye-yns350c-2019",
       "tipo": "Generador",
-      "marca": "Cummins",
+      "marca": "Lureye",
       "modelo": "YNS350C",
       "anio": 2019,
-      "uso": "Standby 275 kW / 343,75 kVA",
-      "precio": "$25.000.000",
+      "uso": "2.895 h",
+      "precio": "$17.000.000",
       "fotos": [
         2
       ],
@@ -188,6 +188,10 @@
         [
           "Año",
           "2019"
+        ],
+        [
+          "Horas de uso",
+          "2.895"
         ],
         [
           "Potencia nominal",
@@ -234,7 +238,8 @@
           "Santiago"
         ]
       ],
-      "texto": "Grupo generador diésel Cummins YNS350C del año 2019, con potencia nominal de 250 kW / 312,5 kVA y standby de 275 kW / 343,75 kVA. Voltaje 400/230 V, 3 fases, 1.500 rpm y factor de potencia 0,8. Pensado para respaldo de energía en faenas, obras, minería, agricultura e instalaciones industriales. Está en Santiago."
+      "texto": "Grupo generador diésel Lureye YNS350C del año 2019, con 2.895 horas de uso, potencia nominal de 250 kW / 312,5 kVA y standby de 275 kW / 343,75 kVA. Voltaje 400/230 V, 3 fases, 1.500 rpm y factor de potencia 0,8. Pensado para respaldo de energía en faenas, obras, minería, agricultura e instalaciones industriales. Está operativo en Santiago.",
+      "precio_nota": "+ IVA"
     }
   ],
   "vendidos": [
