@@ -127,9 +127,9 @@
       "marca": "Scania",
       "modelo": "G400 6x4",
       "anio": 2016,
-      "uso": "548.462 km",
-      "precio": "$73.000.000",
-      "precio_nota": "IVA incluido, con batea",
+      "uso": "588.414 a 662.584 km",
+      "precio": "$46.300.000",
+      "precio_nota": "+ IVA, tracto sin batea",
       "fotos": [
         2,
         3,
@@ -137,39 +137,38 @@
         5,
         6
       ],
-      "ubicacion": "Santiago",
-      "resumen": "Camión tractor con batea 22 m³, en Santiago.",
+      "resumen": "3 unidades disponibles, camión tractor 6x4 del 2016.",
       "specs": [
         [
           "Año",
           "2016"
         ],
         [
+          "Unidades disponibles",
+          "3"
+        ],
+        [
           "Kilometraje",
-          "548.462 km"
+          "588.414 a 662.584 km, según unidad"
         ],
         [
           "Configuración",
           "6x4"
         ],
         [
-          "Batea",
-          "22 m³"
+          "Color",
+          "Blanco"
         ],
         [
           "Combustible",
           "Diésel"
         ],
         [
-          "Ubicación",
-          "Santiago"
-        ],
-        [
-          "Precio sin batea",
-          "$58.000.000 IVA incluido"
+          "Batea",
+          "Semirremolques disponibles por separado, consultar"
         ]
       ],
-      "texto": "Camión tractor Scania G400 6x4 del año 2016, con 548.462 km, equipado con batea de 22 m³ para transporte de áridos, movimiento de material y faena. Motor diésel. Está en Santiago y también se vende sin la batea."
+      "texto": "Camión tractor Scania G400 B 6x4 del año 2016, color blanco, con 3 unidades disponibles entre 588.414 y 662.584 km. Diésel, listo para transporte de áridos, movimiento de material y faena. Precio por tracto, sin batea. Hay semirremolques disponibles por separado; consulta por la unidad y la batea que necesitas."
     },
     {
       "slug": "lureye-yns350c-2019",
@@ -256,6 +255,13 @@
       "foto": "caterpillar-416-2024-2.webp",
       "tipo": "Retroexcavadora",
       "nota": "Vendida por +MÁQUINAS"
+    },
+    {
+      "titulo": "Camión tractor Scania G400 6x4 2016",
+      "cuando": "Octubre 2026",
+      "foto": "scania-g400-2016-2.webp",
+      "tipo": "Camión tractor",
+      "nota": "Vendido por +MÁQUINAS"
     }
   ]
 }
